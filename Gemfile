@@ -32,5 +32,5 @@ end
 
 group :development do
   gem 'rails_12factor'
-  gem 'pg', '0.18.1'
+  gem 'pg', '0.18.3'
 end
