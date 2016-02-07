@@ -20,6 +20,7 @@ group :development, :test do
   gem 'byebug'
 
   gem 'mysql2', '0.3.19'
+  gem 'seed_dump'
 end
 
 group :development do
