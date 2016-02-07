@@ -1,0 +1,42 @@
+<div class="col-lg-10 col-lg-offset-1">
+  <h2>All Trips </h2>
+</div>
+<ul class="trips">
+<% @trips.each do |trip| %>
+  <li class="col-lg-10 col-lg-offset-1 trip">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text-right"><span class="label label-primary"> 15 People are going </span> </div>
+        <h4 class="title">
+          <%= trip.title %>(<%= trip.trip_type %>)
+        </h4>
+
+      </div>
+    </div>
+    <div class="locations row">
+      <div class="col-lg-2 text-left">
+        <div class="source text-center">
+          <span class="loc"><%= trip.source %></span>
+          <br />
+          (<%= trip.start_date %>)
+        </div>
+      </div>
+      <div class="col-lg-2 col-lg-offset-8 text-right">
+        <div class="destination text-center">
+          <span class="loc"><%= trip.destination %></span>
+          <br />
+          (<%= trip.end_date %>)
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="description">
+          <%= trip.description %>
+          <br />
+        </p>
+      </div>
+    </div>
+  </li>
+<% end %>
+</ul>
